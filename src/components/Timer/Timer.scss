@@ -1,0 +1,68 @@
+.Timer {
+	width: 50%;
+	margin: 0 auto;
+	padding: 50px;
+	text-align: center;
+
+	&__count {
+		font-family: "Orbitron", sans-serif;
+		font-size: 32px;
+	}
+
+	&__toggles {
+		display: flex;
+		gap: 10px;
+		justify-content: center;
+		padding: 10px;
+	}
+
+	&__button {
+		padding: 10px 20px;
+		font-family: "Trispace", sans-serif;
+		outline: none;
+		border: 1px solid #dadada;
+		border-radius: 5px;
+		cursor: pointer;
+
+		transition: background-color 0.3s ease;
+
+		&--start {
+			background-color: rgb(52, 165, 0);
+			color: #fff;
+
+			&:hover {
+				background-color: rgb(117, 207, 74);
+			}
+
+			&:active {
+				background-color: rgb(40, 122, 1);
+			}
+		} 
+
+		&--pause {
+			background-color: rgb(174, 192, 9);
+			color: #fff;
+
+			&:hover {
+				background-color: rgb(200, 218, 40);
+			}
+
+			&:active {
+				background-color: rgb(145, 161, 0);
+			}
+		} 
+
+		&--reset {
+			background-color: rgb(228, 56, 56);
+			color: #fff;
+
+			&:hover {
+				background-color: rgb(255, 124, 124);
+			}
+
+			&:active {
+				background-color: rgb(179, 21, 21);
+			}
+		} 
+	}
+}
